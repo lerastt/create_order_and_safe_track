@@ -2,7 +2,7 @@ import requests
 import configuration
 import data
 
-def post_create_orders(body):
+def post_create_order(body):
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_ORDERS,
                          json=body)
 
